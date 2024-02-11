@@ -15,7 +15,7 @@ const porta = 3333 //criando porta
 //GET
 async function mostraMulheres(request, response){
     try{
-        const mulheresVindasDoBancoDeDados = await Mulher.find
+        const mulheresVindasDoBancoDeDados = await Mulher.find()
 
         response.json(mulheresVindasDoBancoDeDados)
     } catch(erro){
